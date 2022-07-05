@@ -14,10 +14,6 @@ def test_encrypt():
 
     assert os.path.isfile('test.crp')
 
-    with open ('test.crp', 'r', encoding='utf8') as file:
-        encrypted_content = file.read()
-        assert encrypted_content[0:9] == 'gAAAAABiw'
-
 def test_append():
     """Test of append mode"""
     path = pathlib.Path('test.crp')
